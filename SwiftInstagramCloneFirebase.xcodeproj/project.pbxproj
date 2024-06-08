@@ -14,10 +14,12 @@
 		F691EF5B2C12A1310083888C /* Base in Resources */ = {isa = PBXBuildFile; fileRef = F691EF5A2C12A1310083888C /* Base */; };
 		F691EF5D2C12A1320083888C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F691EF5C2C12A1320083888C /* Assets.xcassets */; };
 		F691EF602C12A1320083888C /* Base in Resources */ = {isa = PBXBuildFile; fileRef = F691EF5F2C12A1320083888C /* Base */; };
-		F691EF682C12A2AD0083888C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F691EF672C12A2AD0083888C /* GoogleService-Info.plist */; };
 		F691EF6A2C13D0510083888C /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F691EF692C13D0510083888C /* FeedViewController.swift */; };
 		F691EF6C2C13D0600083888C /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F691EF6B2C13D0600083888C /* UploadViewController.swift */; };
 		F691EF6E2C13D0690083888C /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F691EF6D2C13D0690083888C /* SettingsViewController.swift */; };
+		F691EF702C14C1DF0083888C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F691EF6F2C14C1DF0083888C /* GoogleService-Info.plist */; };
+		F691EF722C14C55D0083888C /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F691EF712C14C55D0083888C /* DateExtension.swift */; };
+		F691EF742C14D5060083888C /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F691EF732C14D5060083888C /* FeedCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,10 +34,12 @@
 		F691EF5C2C12A1320083888C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F691EF5F2C12A1320083888C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F691EF612C12A1320083888C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F691EF672C12A2AD0083888C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F691EF692C13D0510083888C /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		F691EF6B2C13D0600083888C /* UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
 		F691EF6D2C13D0690083888C /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		F691EF6F2C14C1DF0083888C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F691EF712C14C55D0083888C /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		F691EF732C14D5060083888C /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,7 +92,7 @@
 		F691EF522C12A1310083888C /* SwiftInstagramCloneFirebase */ = {
 			isa = PBXGroup;
 			children = (
-				F691EF672C12A2AD0083888C /* GoogleService-Info.plist */,
+				F691EF6F2C14C1DF0083888C /* GoogleService-Info.plist */,
 				F691EF532C12A1310083888C /* AppDelegate.swift */,
 				F691EF552C12A1310083888C /* SceneDelegate.swift */,
 				F691EF572C12A1310083888C /* ViewController.swift */,
@@ -99,6 +103,8 @@
 				F691EF692C13D0510083888C /* FeedViewController.swift */,
 				F691EF6B2C13D0600083888C /* UploadViewController.swift */,
 				F691EF6D2C13D0690083888C /* SettingsViewController.swift */,
+				F691EF712C14C55D0083888C /* DateExtension.swift */,
+				F691EF732C14D5060083888C /* FeedCell.swift */,
 			);
 			path = SwiftInstagramCloneFirebase;
 			sourceTree = "<group>";
@@ -164,7 +170,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F691EF5D2C12A1320083888C /* Assets.xcassets in Resources */,
-				F691EF682C12A2AD0083888C /* GoogleService-Info.plist in Resources */,
+				F691EF702C14C1DF0083888C /* GoogleService-Info.plist in Resources */,
 				F691EF602C12A1320083888C /* Base in Resources */,
 				F691EF5B2C12A1310083888C /* Base in Resources */,
 			);
@@ -220,9 +226,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				F691EF582C12A1310083888C /* ViewController.swift in Sources */,
+				F691EF722C14C55D0083888C /* DateExtension.swift in Sources */,
 				F691EF6C2C13D0600083888C /* UploadViewController.swift in Sources */,
 				F691EF542C12A1310083888C /* AppDelegate.swift in Sources */,
 				F691EF6A2C13D0510083888C /* FeedViewController.swift in Sources */,
+				F691EF742C14D5060083888C /* FeedCell.swift in Sources */,
 				F691EF562C12A1310083888C /* SceneDelegate.swift in Sources */,
 				F691EF6E2C13D0690083888C /* SettingsViewController.swift in Sources */,
 			);
